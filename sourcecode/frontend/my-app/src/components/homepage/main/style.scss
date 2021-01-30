@@ -1,0 +1,172 @@
+
+
+/* For mobile phones: */
+@media only screen and (max-width:767px) {
+    .homeContent{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 100%;
+    }
+    .homeLogo{
+        width: 100%;
+        height: 100%;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+    .choose{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+    }
+    .choosetop{
+        padding-top: 10px;
+        font-size: 35px;
+        font-weight: 800;
+        color: rgb(255, 0, 140);
+    }
+    .choosebottom{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .service{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .service>div{
+        flex-basis: 90%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+        height: 190px;
+        padding: 40px;
+        text-align: center;
+    }
+    .imgservice{
+        width: auto;
+        height: 100%;
+    }
+
+}
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .homeContent{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 100%;
+    }
+    .homeLogo{
+        width: 100%;
+        height: 100%;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+    .choose{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+    }
+    .choosetop{
+        padding-top: 10px;
+        font-size: 35px;
+        font-weight: 800;
+        color: rgb(255, 0, 140);
+    }
+    .choosebottom{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .service{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .service>div{
+        flex-basis: 45%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+        height: 190px;
+        padding: 40px;
+        text-align: center;
+    }
+    .imgservice{
+        width: auto;
+        height: 100%;
+    }
+}
+/* For desktop: */
+@media only screen and (min-width: 992px) {
+    .homeContent{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 100%;
+    }
+    .homeLogo{
+        width: 100%;
+        height: 100%;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+    .choose{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+    }
+    .choosetop{
+        padding-top: 10px;
+        font-size: 35px;
+        font-weight: 800;
+        color: rgb(255, 0, 140);
+    }
+    .choosebottom{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .service{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .service>div{
+        flex-basis: 19%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+        height: 190px;
+        padding: 40px;
+        text-align: center;
+    }
+    .imgservice{
+        width: auto;
+        height: 100%;
+    }
+
+}

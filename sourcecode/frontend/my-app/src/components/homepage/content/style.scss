@@ -1,0 +1,252 @@
+/* For mobile phones: */
+
+@media only screen and (max-width:767px) {
+    .content {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin-top: 50px;
+        background-color: whitesmoke;
+    }
+    .all-item {
+        position: relative;
+        height: 380px;
+        flex-basis: 80%;
+        margin: 10px;
+        flex-grow: 1;
+        cursor: pointer;
+        box-shadow: 2px 5px 20px rgb(65, 66, 3);
+    }
+    .item {
+        padding: 10px;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-s {
+        width: 50%;
+        height: 100%;
+    }
+    .image {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(65, 66, 3);
+    }
+    .description {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .all-item::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        border-top: 1px solid rgb(130, 131, 54);
+        border-left: 1px solid rgb(130, 131, 54);
+        transition: 0.3s ease-in-out;
+    }
+    .all-item:hover::before,
+    .all-item:hover::after {
+        width: 105%;
+        height: 103%;
+    }
+    .all-item::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid rgb(130, 131, 54);
+        border-right: 1px solid rgb(130, 131, 54);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+
+/* For tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin-top: 50px;
+        background-color: whitesmoke;
+    }
+    .all-item {
+        position: relative;
+        height: 460px;
+        flex-basis: 40%;
+        margin: 10px;
+        flex-grow: 1;
+        cursor: pointer;
+        box-shadow: 2px 5px 20px rgb(65, 66, 3);
+    }
+    .item {
+        padding: 10px;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-s {
+        width: 70%;
+        height: 100%;
+    }
+    .image {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title {
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(65, 66, 3);
+    }
+    .description {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .all-item::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        border-top: 1px solid rgb(130, 131, 54);
+        border-left: 1px solid rgb(130, 131, 54);
+        transition: 0.3s ease-in-out;
+    }
+    .all-item:hover::before,
+    .all-item:hover::after {
+        width: 105%;
+        height: 103%;
+    }
+    .all-item::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid rgb(130, 131, 54);
+        border-right: 1px solid rgb(130, 131, 54);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+
+/* For desktop: */
+
+@media only screen and (min-width: 992px) {
+    .content {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 50px 0px;
+        background-color: whitesmoke;
+    }
+    .all-item {
+        position: relative;
+        height: 500px;
+        flex-basis: 23%;
+        margin: 10px;
+        // flex-grow: 1;
+        cursor: pointer;
+        // box-shadow: 2px 5px 20px rgb(65, 66, 3);
+    }
+    .item {
+        padding: 10px;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-s {
+        width: 100%;
+        height: 100%;
+    }
+    .image {
+        width: 100%;
+        padding: 20px;
+    }
+    .title {
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 900;
+        color: rgb(65, 66, 3);
+        transition: 1s ease-in-out;
+    }
+    .description {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 14px;
+        color: #000;
+    }
+    .all-item::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        border-top: 1px solid rgb(130, 131, 54);
+        border-left: 1px solid rgb(130, 131, 54);
+        transition: 0.3s ease-in-out;
+    }
+    .all-item:hover::before,
+    .all-item:hover::after {
+        width: 105%;
+        height: 103%;
+    }
+    .all-item::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid rgb(130, 131, 54);
+        border-right: 1px solid rgb(130, 131, 54);
+        transition: 0.3s ease-in-out;
+    }
+}

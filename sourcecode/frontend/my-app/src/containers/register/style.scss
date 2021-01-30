@@ -1,0 +1,35 @@
+.form-register {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./123.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 10px;
+    .register-form {
+        width: 100%;
+        padding: 30px;
+    }
+    .welcome {
+        color: red;
+        font-size: 40px;
+    }
+    .create-account {
+        margin-top: 35px;
+    }
+    .ant-input-number {
+        width: 100%;
+    }
+    .ant-form-item {
+        width: 200%;
+        margin: 20px 30px;
+    }
+    .ant-form {
+        width: 40%;
+        border: 1px solid rgb(210, 140, 179);
+        background-color: #f5f7fa;
+        border-radius: 5px;
+    }
+}

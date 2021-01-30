@@ -1,0 +1,416 @@
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu-style {
+    color: black;
+}
+
+.menu-style:hover {
+    text-decoration: none;
+    color: rgb(207, 209, 71);
+}
+
+.fix {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.fomat-link {
+    color: rgb(121, 118, 118);
+    text-decoration: none;
+}
+
+.fomat-link:hover {
+    color: rgb(141, 14, 114);
+    text-decoration: none;
+}
+
+
+/* For mobile phones: */
+
+@media only screen and (max-width:767px) {
+    .menu {
+        position: relative;
+        height: 120px;
+        background-color: whitesmoke;
+    }
+    .logo-border {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .search {
+        position: absolute;
+        right: 16px;
+        top: 128px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        background-color: rgb(207, 209, 71);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+    }
+    .search-input {
+        width: 0;
+        border: none;
+        overflow: hidden;
+        background-color: transparent;
+        font-size: 13px;
+        flex-grow: 1;
+    }
+    input:focus {
+        outline: none;
+    }
+    span {
+        font-weight: 900;
+        font-size: 17px;
+        display: inline-flex;
+        width: 35px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+    .search:hover {
+        width: 200px;
+        padding-left: 15px;
+    }
+    .menu-icon {
+        position: absolute;
+        top: 125px;
+        left: 19px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .lv1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+        padding: 0;
+        margin: 0;
+    }
+    .dropdownHidden {
+        display: none;
+    }
+    .dropdownShow {
+        display: block;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+    }
+    .lv1>li {
+        padding-left: 20px;
+        line-height: 40px;
+        font-weight: 600;
+        background-color: whitesmoke;
+        border-bottom: 0.3px solid rgb(207, 209, 71);
+        overflow: auto;
+        position: relative;
+    }
+    .lv1>li:hover {
+        background-color: rgb(207, 209, 71);
+    }
+    .icon-down {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        right: 0px;
+        top: 10px;
+        text-align: center;
+    }
+    .menu-show {
+        height: 50%;
+        transition: 0.5s ease-in-out;
+    }
+    .menu-hide {
+        height: 40px;
+        transition: 0.2s ease-in-out;
+    }
+    .lv2 {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        padding-left: 21px;
+        background-color: whitesmoke;
+    }
+    .lv2>li:hover {
+        border-bottom: 1px solid rgb(207, 209, 71);
+        width: 95%;
+    }
+}
+
+
+/* For tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        position: relative;
+        height: 120px;
+        background-color: whitesmoke;
+    }
+    .logo-border {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .search {
+        position: absolute;
+        right: 35px;
+        top: 30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: rgb(207, 209, 71);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+    }
+    .search-input {
+        width: 0;
+        border: none;
+        overflow: hidden;
+        background-color: transparent;
+        font-size: 15px;
+        flex-grow: 1;
+    }
+    input:focus {
+        outline: none;
+    }
+    span {
+        font-weight: 900;
+        font-size: 17px;
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .search:hover {
+        width: 180px;
+        padding-left: 25px;
+    }
+    .menu-icon {
+        position: absolute;
+        top: 25px;
+        left: 40px;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .dropdownHidden {
+        display: none;
+    }
+    .dropdownShow {
+        display: block;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+    }
+    .lv1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .lv1>li {
+        padding-left: 20px;
+        line-height: 40px;
+        font-weight: 600;
+        background-color: whitesmoke;
+        border-bottom: 0.3px solid rgb(207, 209, 71);
+        overflow: auto;
+        position: relative;
+    }
+    .lv1>li:hover {
+        background-color: rgb(207, 209, 71);
+    }
+    .icon-down {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        right: 0px;
+        top: 10px;
+        text-align: center;
+    }
+    .menu-show {
+        height: 50%;
+        transition: 0.5s ease-in-out;
+    }
+    .menu-hide {
+        height: 40px;
+        transition: 0.2s ease-in-out;
+    }
+    .lv2 {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        padding-left: 21px;
+        background-color: whitesmoke;
+    }
+    .lv2>li:hover {
+        border-bottom: 1px solid rgb(207, 209, 71);
+        width: 95%;
+    }
+}
+
+
+/* For desktop: */
+
+@media only screen and (min-width: 992px) {
+    .menu-icon {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        height: 120px;
+        background-color: whitesmoke;
+    }
+    .logo-border {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .logo {
+        position: absolute;
+        right: 0;
+        width: 90%;
+        height: auto;
+        cursor: pointer;
+    }
+    .lv1>li {
+        display: inline-block;
+        height: 100%;
+        padding-top: 45px;
+        padding-left: 20px;
+        margin-left: 10px;
+        line-height: 100%;
+    }
+    .dropdown {
+        position: relative;
+        height: 100%;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    button:focus {
+        outline: none;
+    }
+    .lv2::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 60px;
+        border-top: 3px solid rgb(207, 209, 71);
+        transition: 0.3s ease-in-out;
+    }
+    .lv1>li:hover {
+        color: rgb(207, 209, 71);
+    }
+    .lv1 {
+        position: relative;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .lv2 {
+        position: absolute;
+        width: 250px;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+        transition: 0.4s ease-in-out;
+    }
+    .lv2>li {
+        position: relative;
+        width: 100%;
+        height: 35px;
+        top: 60px;
+        left: 0px;
+        line-height: 35px;
+        padding-left: 20px;
+        border-bottom: 0.2px solid tan;
+        background-color: whitesmoke;
+        color: rgb(121, 118, 118);
+        font-weight: 200;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        box-shadow: 1px 1px 5px rgb(92, 91, 90);
+    }
+    li:hover>.lv2 {
+        visibility: visible;
+        opacity: 1;
+    }
+    .lv2>li:hover {
+        background-color: rgb(223, 219, 213);
+    }
+    .lv2>li::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        left: 5%;
+        bottom: 0;
+        border-bottom: 1px solid rgb(207, 209, 71);
+        transition: 0.3s ease-in-out;
+    }
+    .lv2>li:hover::before {
+        width: 90%;
+    }
+    .search {
+        position: absolute;
+        right: 45px;
+        top: 33px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: rgb(207, 209, 71);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+    }
+    .search-input {
+        width: 0;
+        border: none;
+        overflow: hidden;
+        background-color: transparent;
+        font-size: 15px;
+        flex-grow: 1;
+    }
+    input:focus {
+        outline: none;
+    }
+    span {
+        font-weight: 900;
+        font-size: 17px;
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .search:hover {
+        width: 300px;
+        padding-left: 25px;
+    }
+    .icon-down {
+        margin-left: 10px;
+    }
+}

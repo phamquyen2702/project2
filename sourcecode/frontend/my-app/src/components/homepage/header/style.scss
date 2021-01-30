@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    min-height: 50px;
+    background-color: rgb(207, 209, 71);
+    align-items: center;
+    padding-right: 40px;
+    color: rgb(245, 241, 237);
+}
+
+.space {
+    display: block;
+}
+
+.header>div {
+    margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header>div {
+        flex-basis: 100%;
+    }
+    .space {
+        display: none;
+    }
+}
+
+.name-headers {
+    color: white;
+}
+
+.name-headers:hover {
+    text-decoration: none;
+}

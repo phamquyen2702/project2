@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.blur {
+    animation: blur 3s ease-in-out;
+}
+
+@keyframes blur {
+    to {
+        filter: blur(0px);
+    }
+    from {
+        filter: blur(25px);
+    }
+}
